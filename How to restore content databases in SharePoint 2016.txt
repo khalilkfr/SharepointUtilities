@@ -1,0 +1,8 @@
+In SharePoint 2016 > Create A new web application.
+Then Create a new site collection.
+Go back to Application Management > Manage Content database.
+Click on Content Database name > Check Remove Content Database > OK.
+Or use Dismount-SPContentDatabase "<ContentdBName>"
+Open SQL Management Studio.
+Restore your database.
+then run the following Mount-SPContentDatabase "<ContentDb>" -DatabaseServer "<DbServer>" -WebApplication http://SiteName
