@@ -1,0 +1,6 @@
+// Backup web app
+Backup-SPFarm -Directory <BackupFolder> -BackupMethod {Full | Differential} -Item <WebApplicationName> [-Verbose]
+
+// Restore web app
+
+Restore-SPFarm -Directory <Backup folder name> -RestoreMethod Overwrite -Item <Content database name> [-BackupId <GUID>] [-Verbose]
